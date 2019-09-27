@@ -1,0 +1,36 @@
+# creating a random program using C# in Visual Studio
+
+using System;
+
+namespace PA1
+{
+    class Marshallsrevenue
+    {
+        public static void Main(string[] args)
+        {
+            string InteriorMuralAsString;
+            double InteriorMural;
+            string ExteriorMuralAsString;
+            double ExteriorMural;
+            Console.WriteLine("Make your vision your view");
+            Console.WriteLine("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM");
+            Console.WriteLine("M Make your vision your view M");
+            Console.WriteLine("MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM");
+            Console.Write("Please enter the number of interior murals >> ");
+            InteriorMuralAsString = Console.ReadLine();
+            Console.Write("Please enter the number of exterior murals >> ");
+            ExteriorMuralAsString = Console.ReadLine();
+            InteriorMural = Convert.ToDouble(InteriorMuralAsString);
+            ExteriorMural = Convert.ToDouble(ExteriorMuralAsString);
+            double InteriorRevenue = InteriorMural * 500;
+            double ExteriorRevenue = ExteriorMural * 750;
+            double TotalRevenue = InteriorRevenue + ExteriorRevenue;
+            Console.WriteLine("Revenue for Interior Revenue is " + InteriorRevenue);
+            Console.WriteLine("Revenue for Exterior Revenue is " + ExteriorRevenue);
+            Console.WriteLine("Total Revenue for both Interior and Exterior murals is " + TotalRevenue);
+            Console.Write("There are more Interior Murals scheduled than Exterior Murals. ");
+            Console.WriteLine(InteriorMural > ExteriorMural);
+            Console.WriteLine("This code was produced by Jennifer M.");
+        }
+    }
+}
